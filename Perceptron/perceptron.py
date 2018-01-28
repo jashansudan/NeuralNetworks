@@ -8,62 +8,80 @@ def get_data(file_name):
                 temp_line[i] = float(temp_line[i])
             else:
                 temp_line[i] = temp_line[i].strip()
-                if temp_line[i] == "Iris-setosa":
-                    temp_line[i] = 1
-                elif temp_line[i] == "Iris-versicolor":
-                    temp_line[i] = 0
-                else:
-                    temp_line[i] = -1
+                temp_line[i] = convertStrToVector(temp_line[i])
         flower_data.append(temp_line)
     return flower_data
 
 
-def train_model(train_data, epochs):
-    weight_vector = [0, 0, 0, 0, 0]
-    learning_rate = 0.0005
-    for i in range(epochs):
-        sum_error = 0
-        for row in train_data:
-            classifcation = classify(row, weight_vector)
-            error = row[-1] - classifcation
-            sum_error += error**2
-            weight_vector[0] = weight_vector[0] + learning_rate * error
-            for i in range(len(row) - 1):
-                weight_vector[i + 1] = weight_vector[i + 1] + learning_rate * error * row[i]
-    return weight_vector
-
-
-def classify(row_data, weight_vector):
-    activation = weight_vector[0]
-    for i in range(len(row_data) - 1):
-        activation += weight_vector[i + 1] * row_data[i]
-    if activation > 0.333:
-        return 1
-    elif activation > -0.333:
-        return 0
+def convertStrToVector(string):
+    if string == "Iris-setosa":
+        return [1, 0, 0]
+    elif string == "Iris-versicolor":
+        return [0, 1, 0]
     else:
-        return -1
+        return [0, 0, 1]
 
 
-def test_model(data, weight_vector):
-    for row in data:
-        classification = classify(row, weight_vector)
-        print "Predicted:", get_flower(classification), "Actual:", get_flower(row[-1])
-
-def get_flower(num):
-    if num == 1:
+def convertVectorToStr(vector):
+    if vector == [1, 0, 0]:
         return "Iris-setosa"
-    elif num == 0:
+    elif vector == [0, 1, 0]:
         return "Iris-versicolor"
     else:
         return "Iris-virginica"
 
 
+def classify(weight_vector, row_data):
+    activation = weight_vector[0]
+    for i in range(1, len(row_data)):
+        activation += weight_vector[i] * row_data[i - 1]
+
+    return 1 if activation >= 0 else 0
+
+
+def train_classifier(train_data, epochs):
+    learning_rate = 0.05
+    weight_vector_1 = [1.0, 0.0, 0.0, 0.0, 0.0]
+    weight_vector_2 = [2.0, 0.0, 0.0, 0.0, 0.0]
+    weight_vector_3 = [3.0, 0.0, 0.0, 0.0, 0.0]
+
+    for i in range(epochs):
+        sum_error = 0
+        for row in train_data:
+            classification_1 = classify(weight_vector_1, row)
+            classification_2 = classify(weight_vector_2, row)
+            classification_3 = classify(weight_vector_3, row)
+
+            error_1 = row[-1][0] - classification_1
+            error_2 = row[-1][1] - classification_2
+            error_3 = row[-1][2] - classification_3
+            sum_error += error_1**2 + error_2**2 + error_3**2
+
+            weight_vector_1[0] = weight_vector_1[0] + learning_rate * error_1
+            weight_vector_2[0] = weight_vector_2[0] + learning_rate * error_2
+            weight_vector_3[0] = weight_vector_3[0] + learning_rate * error_3
+
+            for i in range(1, len(row)):
+                weight_vector_1[i] = weight_vector_1[i] + learning_rate * error_1 * row[i - 1]
+                weight_vector_2[i] = weight_vector_2[i] + learning_rate * error_2 * row[i - 1]
+                weight_vector_3[i] = weight_vector_3[i] + learning_rate * error_3 * row[i - 1]
+        #print sum_error
+    print weight_vector_1, weight_vector_2, weight_vector_3
+    return weight_vector_1, weight_vector_2, weight_vector_3
+
+
+def test_classifier(test_data, weight_vector_1, weight_vector_2, weight_vector_3):
+    for row in test_data:
+        classification_1 = classify(weight_vector_1, row)
+        classification_2 = classify(weight_vector_2, row)
+        classification_3 = classify(weight_vector_3, row)
+
+        print "Predicted:", [classification_1, classification_2, classification_3], "Actual:", row[-1]
+
+
 train_data = get_data('train.txt')
-weight_vector = train_model(train_data, 100)
+weight_vector_1, weight_vector_2, weight_vector_3 = train_classifier(train_data, 100)
 test_data = get_data('test.txt')
-test_model(test_data, weight_vector)
-
-
+test_classifier(test_data, weight_vector_1, weight_vector_2, weight_vector_3)
 
 
