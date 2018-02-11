@@ -1,0 +1,206 @@
+Prediction   Expected
+Training data predictions
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-virginica  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-virginica  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Testing data predictions
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-setosa  Iris-setosa
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-versicolor  Iris-versicolor
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-versicolor  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-versicolor  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-versicolor  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+Iris-virginica  Iris-virginica
+
+
+
+Initial Weight Vectors:
+weight_vector_1 = [1.0, 0.0, 0.0, 0.0, 0.0]
+weight_vector_2 = [2.0, 0.0, 0.0, 0.0, 0.0]
+weight_vector_3 = [3.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Final Weight Vectors:
+[2.995468730157134, 2.354999999999998, 4.319999999999995, -5.609999999999996, -2.715000000000005]
+[1.2995580962199937, 1.999999999999955, 2.850000000000021, -2.114999999999957, -5.72999999999997]
+[0.0391851447293812, -4.354999999999954, -7.170000000000012, 7.724999999999911, 8.444999999999933]]
+
+Total Classification Error:
+Sum Squared error:
+sum((d - y) * 2)
+- 5
+
+Total Number of Iterations: 200
+Terminating Criteria: Max number of iterations reached
+
+Train data:
+Iris Setosa, precision: 40/40, recall: 80/80
+Iris-versicolor, precision: 38/40, recall: 80/80
+Iris-virinica, precision: 40/40, recall: 78/80
+
+Test data:
+Iris Setosa, precision: 20/20, recall: 10/10
+Iris versicolor, precision: 17/20, recall: 10/10
+Iris virinica, precision: 20/20, recall: 7/10
+
+
+
+Using a tool classifier:
+Iris Setosa: precision: 1.00, recall 1.00
+Iris versicolor: precision: 0.93, recall: 1.00
+Iris Virinica:  preision: 1.00, recall: 0.83
+
+
+Comparing Precision/Recall of Tool Vs Personal Perceptron:
+('Accuracy', 96.666666666666671)
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00        11
+          1       0.93      1.00      0.96        13
+          2       1.00      0.83      0.91         6
+
+avg / total       0.97      0.97      0.97        30
+
+
+It seems overall both ANNs, had an equal prediction rate. However this is testing my ANN on the full data set vs testing the tool only on a small subset. Overall it seems my ANN performs well because it's specialzed for this data set, I had the opportunity to play around with learning rates and iterations. Meanwhile the tool is generalized and has to be able to handle many different inputs.
+
