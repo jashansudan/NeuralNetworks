@@ -110,7 +110,7 @@ def updateWeights(network, row, learning_rate):
         for neuron in network[i]:
             for j in range(len(inputs)):
                 neuron['weights'][j] += learning_rate * neuron['delta'] * inputs[j]
-            neuron['weights'][-1] + learning_rate * neuron['delta']
+            neuron['weights'][-1] += learning_rate * neuron['delta']
 
 
 def trainNetwork(network, train, learning_rate, epochs, num_output_nodes):
@@ -133,5 +133,5 @@ standardizeDefiningLabel(data)
 data = data[:1000]
 input_nodes = len(data[0]) - 1
 output_nodes = len(set([row[-1] for row in data]))
-network = setupNetwork(input_nodes, 11, output_nodes)
-trainNetwork(network, data, 0.5, 10000, output_nodes)
+network = setupNetwork(input_nodes, 25, output_nodes)
+trainNetwork(network, data, 0.5, 500, output_nodes)
