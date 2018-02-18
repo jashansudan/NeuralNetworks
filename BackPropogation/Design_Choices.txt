@@ -1,0 +1,34 @@
+Initial Weights:
+The initial weights were set to randomly generated values between 0 and 1. It is known the backpropogation algorithm will adjust them on each epoch run, so it made sense to initialize them to random values.
+
+Node Ouptut Function:
+For the node output function I decided to use a sigmoid function. The reasons I went with this is because a sigmoid function is continuous, monotonically increasing, invertible, differentiable everywhere and asymptotically approaches its saturation values.
+
+Learning Rate:
+The learning rate I decided to go with was 0.5, this is inbetween the recommended 0.1 to 0.9 range and since we had a large training set and large error at the beginning, it allows our network to quickly adjust while still later head towards the global minima.
+
+Termination Criteria:
+For termination criteria, I would check the network's accuracy on a validation data set and when it reached over 80% I exited. The reason I used 80% is because this was easily reachable with the number of nodes I used, if I wanted to reach 90% I would have probably had to double my number of nodes which would have ended up taking probably 10x as long to train.
+
+Number of Layers:
+Since the data we were given is categorical, it would seem that only a single hidden layer would be needed, and we should just vary the number of hidden nodes to properly classify. 
+
+Number of Input Nodes:
+11 - Since there are 11 defining features in the dataset, I used 11 input nodes
+
+Number of Hidden Nodes:
+I researched online for the number of hidden nodes to use in a network, along with testing out a few different values and I found that there was a large rate of diminishing returns with my network. This made me decide to use 25 nodes, as it was more than double the number of features of the data set and the training time was still reasonable (5 minutes~)
+
+Number of Output Nodes:
+3 - We only have 3 categorical values and because of this we can use a vector of size 3 to represent our output.
+
+
+Momentum parameter value:
+For my momentum parameter, I used a value of 0.5 * previous weight change. This made sense, as it would help as more quickly reach our global minima, however it would also ensure, we weren't changing our weights by significant amounts. 
+
+Data preprocessing:
+Data preprocessing I did involved normalizing all data values, this means making all data inbetween the range of 0-1. Allowing for each feature to have an equal amount of input towards the activation. I also converted the feature labels to binary values, allowing for easier differentiating from the output nodes.
+
+
+Data used for training, validation and testing and how the split was done:
+I used a training/testing split. Where 80% of my data is used for training and 20% of validation. The split was done by randomly splitting the data. However for my training I would start by initally training my network for 500 epochs then test it against the test data it had not seen. From there if it didn't have an 80% or higher prediction rate, the network would train for another 10 epochs, and this would loop until the desired accuracy was reached. This method was taken from the Lecture 8 slides: Performance Evaluation and Generalization.
