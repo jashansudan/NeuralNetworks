@@ -1,0 +1,14 @@
+Initial weight choices:
+The initial weights I used for the nodes were 0.1 and 0.2.
+I originally selected these values, because the example in the slides selected similar values.
+However they make for a good choice because they are in between 0-1 and will not cause massive fluctuations in the network.
+
+Final Weights:
+The final weight vectors reached were: -0.67586813 and  0.73703349.
+
+Learning rate:
+The learning rate I chose was 0.3, this is a good value because it is not too high, that we could end up overtraining our network and not too low that we need to run multiple epochs to converge our network.
+
+Termination criteria:
+I decided to simply run the network for 1 iteration through the data set. 
+I originally was going to run multiple epochs, similar to the slides, however there was no change in the final weight vectors even with more epochs, so I decided to keep it to one.
